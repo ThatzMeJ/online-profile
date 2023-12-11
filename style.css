@@ -305,3 +305,77 @@ nav button {
 .about__info p span {
   color: var(--clr-indigo);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact h1 {
+  font-size: var(--size-7xl);
+  color: var(--clr-slate600);
+}
+
+.contact__info {
+  width: 600px;
+  background-color: var(--clr-slate800);
+  box-shadow: 0 0 20px 0 var(--clr-rose);
+}
+
+form {
+  margin: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-field {
+  width: 400px;
+  height: 40px;
+  margin-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 1px solid #777;
+  border-radius: 14px;
+  outline: none;
+}
+
+.textarea-field {
+  height: 150px;
+  padding-top: 10px;
+}
+
+.contact-btn {
+  background-color: var(--clr-rose);
+  color: var(--clr-light);
+  border-radius: 20px;
+  margin-top: 18px;
+  padding: 10px;
+  font-weight: 700;
+  box-shadow: 0 10px 20px #e11d4880,0 6px 6px #e11d4880,0 0 100px -10px var(--clr-rose);
+  cursor: pointer;
+  font-size: var(--size-sm);
+  transition: 0.3s ease;
+}
+
+.contact-btn:hover {
+  opacity: 0.7;
+}
