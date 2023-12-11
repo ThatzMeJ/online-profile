@@ -307,7 +307,149 @@ nav button {
 }
 
 
+.projects {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
 
+#searchBar[type="search"] {
+  width: 60%;
+  border-radius: 20px;
+  padding: 5px 15px;
+  background: transparent;
+  font-size: 1.15rem;
+  color: white;
+}
+
+#searchBar[type='search']:focus {
+  /* Your styles for the active state go here */
+  opacity: 0.7;
+}
+
+
+.projects__title {
+  font-size: var(--size-7xl);
+  color: var(--clr-slate600);
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.projects-info {
+  display: grid;
+  margin-top: 50px;
+  grid-template-columns: repeat(4, 1fr);
+ 
+}
+
+.card {
+  background-color: var(--clr-slate800);
+  box-shadow: 0 0 20px 0 var(--clr-rose);
+  border-radius: 10px;
+  width: 400px;
+  height: 480px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  color: var(--clr-slate400);
+  padding: 20px;
+  gap: 10px;
+}
+
+.card-logo {
+  width: 60px;
+  height: 60px;
+  color: yellow;
+  flex: 1;
+}
+
+.card-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.icon-wrapper {
+  border: 1px solid var(--clr-slate600);
+  padding: 4px; 
+  border-radius: 6px; 
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--clr-slate400);
+  transition: 0.3s ease-in;
+  position: relative;
+}
+
+.icon-wrapper:hover {
+  box-shadow: 0 0 20px 0 var(--clr-rose);
+}
+
+#github {
+  display: none;
+  position: absolute;
+  top: 111%;
+  left: -112%;
+  color: var(--clr-slate400);
+  background: var(--clr-slate800);
+  border: 1px solid transparent;
+  border-radius: 9px;
+  padding: 15px;
+  padding: 2%;
+  box-shadow: 0px 0px 3px 0px;
+  text-align: center;
+  z-index: 3;
+  transition: 0.3s ease-in-out;
+}
+
+.icon-wrapper:hover #github {
+  display: block;
+}
+.card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+}
+
+.card-content div:nth-child(1) {
+  display: flex;
+  justify-content: space-between;
+  font-style: italic;
+}
+
+.card-content div p:nth-child(2) {
+  letter-spacing: 1.2px;
+}
+
+.card-content div:nth-child(3) {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-content button {
+  background-color: transparent;
+  color: var(--clr-slate400);
+  border: 1px solid var(--clr-slate600);
+  font-weight: 600;
+  letter-spacing: 1.1px;
+  border-radius: 10px;
+}
+
+.card img:hover{
+  opacity: 0.7;
+}
+
+.ide-info {
+  display: flex;
+  gap: 15px;
+  flex: 1;
+}
 
 
 
